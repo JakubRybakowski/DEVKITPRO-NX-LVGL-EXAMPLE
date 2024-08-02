@@ -109,7 +109,7 @@ static void quitApp() {
     SDL_WaitThread(tick_thread, NULL);
     lv_display_delete(disp);
     lv_sdl_quit();
-    romfsExit();
+    //romfsExit();
     socketExit();
 }
 
@@ -117,7 +117,7 @@ int main(int argc, char *argv[]) {
     socketInitializeDefault();
 	nxlinkStdio();
 
-    romfsInit();
+    //romfsInit();
 
     printf("Hello World!\n");
 

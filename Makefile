@@ -50,7 +50,7 @@ INCLUDES	:=	. ./libs/libjpeg-turbo
 APP_AUTHOR  := FreeShopNS
 APP_TITLE   := FreeShopNS
 APP_VERSION := 1.0.2
-ROMFS	:=	drive
+#ROMFS	:=	drive
 
 #---------------------------------------------------------------------------------
 # options for code generation
