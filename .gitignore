@@ -1,0 +1,12 @@
+
+.build/
+
+.idea/
+
+.vscode/
+
+DEVKITPRO-NX-LVGL-EXAMPLE.elf
+
+DEVKITPRO-NX-LVGL-EXAMPLE.nacp
+
+DEVKITPRO-NX-LVGL-EXAMPLE.nro
