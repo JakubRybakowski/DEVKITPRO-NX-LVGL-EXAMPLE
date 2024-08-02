@@ -14,10 +14,6 @@ void ui_main_screen_init(void);
 lv_obj_t *ui_main;
 lv_obj_t *ui_main_panel_bottomline;
 lv_obj_t *ui_main_label_label1;
-lv_obj_t *ui_main_image_image4;
-lv_obj_t *ui_main_image_image1;
-lv_obj_t *ui_main_label_label2;
-lv_obj_t *ui_main_label_label3;
 lv_obj_t *ui_main_panel_panel1;
 lv_obj_t *ui_main_image_image3;
 lv_obj_t *ui_main_image_image5;
@@ -35,7 +31,25 @@ lv_obj_t *ui_main_image_image15;
 lv_obj_t *ui_main_image_image16;
 lv_obj_t *ui_main_image_image17;
 lv_obj_t *ui_main_image_image18;
-lv_obj_t *ui_main_container_container1;
+lv_obj_t *ui_main_imgbutton_imgbutton1;
+lv_obj_t *ui_main_label_label3;
+lv_obj_t *ui_main_imgbutton_imgbutton2;
+lv_obj_t *ui_main_label_label2;
+lv_obj_t *ui_main_imgbutton_imgbutton3;
+lv_obj_t *ui_main_label_label4;
+
+
+// SCREEN: ui_screen1
+void ui_screen1_screen_init(void);
+lv_obj_t *ui_screen1;
+lv_obj_t *ui_screen1_panel_panelpopup;
+lv_obj_t *ui_screen1_label_label5;
+void ui_event_screen1_button_button1( lv_event_t * e);
+lv_obj_t *ui_screen1_button_button1;
+lv_obj_t *ui_screen1_label_label6;
+void ui_event_screen1_button_button2( lv_event_t * e);
+lv_obj_t *ui_screen1_button_button2;
+lv_obj_t *ui_screen1_label_label7;
 lv_obj_t *ui_startevents____initial_actions0;
 const lv_image_dsc_t *ui_imgset_0e1e5aed207066f1b8acb2c7d2ae52bd8707615c58e4065bc5d8477ce[1] = {&ui_img_30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3_png};
 const lv_image_dsc_t *ui_imgset_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da[1] = {&ui_img_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da97681_png};
@@ -58,6 +72,18 @@ const lv_image_dsc_t *ui_imgset_f9dc003e469d3986eb0f7b6d9769ef0194608d530ac94683
 ///////////////////// ANIMATIONS ////////////////////
 
 ///////////////////// FUNCTIONS ////////////////////
+void ui_event_screen1_button_button1( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      yesAcction( e );
+}
+}
+void ui_event_screen1_button_button2( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      noAcction( e );
+}
+}
 
 ///////////////////// SCREENS ////////////////////
 
@@ -67,6 +93,7 @@ lv_disp_t *dispp = lv_display_get_default();
 lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED), true, LV_FONT_DEFAULT);
 lv_disp_set_theme(dispp, theme);
 ui_main_screen_init();
+ui_screen1_screen_init();
 ui_startevents____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_main);
 }

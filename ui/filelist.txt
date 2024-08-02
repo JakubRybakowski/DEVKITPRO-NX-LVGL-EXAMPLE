@@ -1,10 +1,9 @@
 screens/ui_main.c
+screens/ui_screen1.c
 ui.c
 components/ui_comp_hook.c
 ui_helpers.c
 ui_events.c
-images/ui_img_a_png.c
-images/ui_img_b_png.c
 images/ui_img_30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3_png.c
 images/ui_img_29c1ff1b697b468082d43540425fca8f538865a8d1f876de46ae5490203b6c2e_png.c
 images/ui_img_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da97681_png.c
@@ -21,3 +20,6 @@ images/ui_img_b7c8b605f109a0f090fd4231a33c87eaf91ff1bb3a1b6fe94b9057a822162a6d_p
 images/ui_img_bfeb5333a4473854d4cba8332d64152d595879c3714e687b45c47ad33b234a08_png.c
 images/ui_img_d3c210e61e8487200fc4c344987243a60257838187a69a6a81c42d7447d5d192_png.c
 images/ui_img_f9dc003e469d3986eb0f7b6d972629ef201946028d530ac946823886e22ca3b2_png.c
+images/ui_img_dark_theme_a_button_png.c
+images/ui_img_dark_theme_b_button_png.c
+images/ui_img_dark_theme_plus_button_png.c

@@ -20,10 +20,6 @@ void ui_main_screen_init(void);
 extern lv_obj_t *ui_main;
 extern lv_obj_t *ui_main_panel_bottomline;
 extern lv_obj_t *ui_main_label_label1;
-extern lv_obj_t *ui_main_image_image4;
-extern lv_obj_t *ui_main_image_image1;
-extern lv_obj_t *ui_main_label_label2;
-extern lv_obj_t *ui_main_label_label3;
 extern lv_obj_t *ui_main_panel_panel1;
 extern lv_obj_t *ui_main_image_image3;
 extern lv_obj_t *ui_main_image_image5;
@@ -41,11 +37,25 @@ extern lv_obj_t *ui_main_image_image15;
 extern lv_obj_t *ui_main_image_image16;
 extern lv_obj_t *ui_main_image_image17;
 extern lv_obj_t *ui_main_image_image18;
-extern lv_obj_t *ui_main_container_container1;
+extern lv_obj_t *ui_main_imgbutton_imgbutton1;
+extern lv_obj_t *ui_main_label_label3;
+extern lv_obj_t *ui_main_imgbutton_imgbutton2;
+extern lv_obj_t *ui_main_label_label2;
+extern lv_obj_t *ui_main_imgbutton_imgbutton3;
+extern lv_obj_t *ui_main_label_label4;
+// SCREEN: ui_screen1
+void ui_screen1_screen_init(void);
+extern lv_obj_t *ui_screen1;
+extern lv_obj_t *ui_screen1_panel_panelpopup;
+extern lv_obj_t *ui_screen1_label_label5;
+void ui_event_screen1_button_button1( lv_event_t * e);
+extern lv_obj_t *ui_screen1_button_button1;
+extern lv_obj_t *ui_screen1_label_label6;
+void ui_event_screen1_button_button2( lv_event_t * e);
+extern lv_obj_t *ui_screen1_button_button2;
+extern lv_obj_t *ui_screen1_label_label7;
 extern lv_obj_t *ui_startevents____initial_actions0;
 
-LV_IMG_DECLARE( ui_img_a_png);   // assets/A.png
-LV_IMG_DECLARE( ui_img_b_png);   // assets/B.png
 LV_IMG_DECLARE( ui_img_30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3_png);   // assets/30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3.png
 LV_IMG_DECLARE( ui_img_29c1ff1b697b468082d43540425fca8f538865a8d1f876de46ae5490203b6c2e_png);   // assets/29c1ff1b697b468082d43540425fca8f538865a8d1f876de46ae5490203b6c2e.png
 LV_IMG_DECLARE( ui_img_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da97681_png);   // assets/399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da97681.png
@@ -62,6 +72,9 @@ LV_IMG_DECLARE( ui_img_b7c8b605f109a0f090fd4231a33c87eaf91ff1bb3a1b6fe94b9057a82
 LV_IMG_DECLARE( ui_img_bfeb5333a4473854d4cba8332d64152d595879c3714e687b45c47ad33b234a08_png);   // assets/bfeb5333a4473854d4cba8332d64152d595879c3714e687b45c47ad33b234a08.png
 LV_IMG_DECLARE( ui_img_d3c210e61e8487200fc4c344987243a60257838187a69a6a81c42d7447d5d192_png);   // assets/d3c210e61e8487200fc4c344987243a60257838187a69a6a81c42d7447d5d192.png
 LV_IMG_DECLARE( ui_img_f9dc003e469d3986eb0f7b6d972629ef201946028d530ac946823886e22ca3b2_png);   // assets/f9dc003e469d3986eb0f7b6d972629ef201946028d530ac946823886e22ca3b2.png
+LV_IMG_DECLARE( ui_img_dark_theme_a_button_png);   // assets/Dark theme/A_Button.png
+LV_IMG_DECLARE( ui_img_dark_theme_b_button_png);   // assets/Dark theme/B_Button.png
+LV_IMG_DECLARE( ui_img_dark_theme_plus_button_png);   // assets/Dark theme/Plus_Button.png
 
 
 

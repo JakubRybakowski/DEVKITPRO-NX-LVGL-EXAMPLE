@@ -87,8 +87,9 @@ void mainLoop() {
                 case SDL_JOYBUTTONDOWN:
                     SDL_Log("Joystick %d button %d down\n", event.jbutton.which, event.jbutton.button);
                     if (event.jbutton.which == 0) {
-                        if (event.jbutton.button == 0) {
-                            // (A) button down
+                        if (event.jbutton.button == 1) {
+                            lv_obj_set_parent(ui_screen1_panel_panelpopup, ui_main);
+                            lv_obj_clear_flag(ui_screen1_panel_panelpopup, LV_OBJ_FLAG_HIDDEN);
                         } else if (event.jbutton.button == 10) {
                             mainLopp = false;
                         }
@@ -104,7 +105,7 @@ void mainLoop() {
     }
 }
 
-void quit() {
+static void quitApp() {
     SDL_WaitThread(tick_thread, NULL);
     lv_display_delete(disp);
     lv_sdl_quit();
@@ -133,7 +134,7 @@ int main(int argc, char *argv[]) {
 
     mainLoop();
 
-    quit();
+    quitApp();
 
     return 0;
 }
