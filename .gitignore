@@ -12,3 +12,7 @@ DEVKITPRO-NX-LVGL-EXAMPLE.nacp
 DEVKITPRO-NX-LVGL-EXAMPLE.nro
 
 .DS_Store
+
+SquareLine/backup/
+
+SquareLine/autosave/

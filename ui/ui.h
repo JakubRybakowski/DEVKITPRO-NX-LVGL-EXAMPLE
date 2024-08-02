@@ -54,6 +54,30 @@ extern lv_obj_t *ui_screen1_label_label6;
 void ui_event_screen1_button_button2( lv_event_t * e);
 extern lv_obj_t *ui_screen1_button_button2;
 extern lv_obj_t *ui_screen1_label_label7;
+// SCREEN: ui_screen2
+void ui_screen2_screen_init(void);
+extern lv_obj_t *ui_screen2;
+extern lv_obj_t *ui_screen2_arc_arc1;
+extern lv_obj_t *ui_screen2_button_button3;
+extern lv_obj_t *ui_screen2_label_label8;
+extern lv_obj_t *ui_screen2_calendar_calendar1;
+extern lv_obj_t *ui_screen2_checkbox_checkbox1;
+extern lv_obj_t *ui_screen2_dropdown_dropdown1;
+extern lv_obj_t *ui_screen2_keyboard_keyboard1;
+extern lv_obj_t *ui_screen2_slider_slider1;
+extern lv_obj_t *ui_screen2_spinbox_spinbox1;
+extern lv_obj_t *ui_screen2_switch_switch1;
+extern lv_obj_t *ui_screen2_bar_bar2;
+extern lv_obj_t *ui_screen2_chart_chart1;
+extern lv_obj_t *ui_screen2_chart_chart1_Xaxis;
+extern lv_obj_t *ui_screen2_chart_chart1_Yaxis1;
+extern lv_obj_t *ui_screen2_chart_chart1_Yaxis2;
+extern lv_obj_t *ui_screen2_spinner_spinner1;
+extern lv_obj_t *ui_screen2_tabview_tabview1;
+extern lv_obj_t *ui_screen2_tabpage_tabpage1;
+extern lv_obj_t *ui_screen2_tabpage_tabpage2;
+extern lv_obj_t *ui_screen2_tabpage_tabpage3;
+extern lv_obj_t *ui_screen2_textarea_textarea1;
 extern lv_obj_t *ui_startevents____initial_actions0;
 
 LV_IMG_DECLARE( ui_img_30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3_png);   // assets/30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3.png

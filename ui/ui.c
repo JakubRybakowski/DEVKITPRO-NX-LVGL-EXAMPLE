@@ -50,6 +50,32 @@ lv_obj_t *ui_screen1_label_label6;
 void ui_event_screen1_button_button2( lv_event_t * e);
 lv_obj_t *ui_screen1_button_button2;
 lv_obj_t *ui_screen1_label_label7;
+
+
+// SCREEN: ui_screen2
+void ui_screen2_screen_init(void);
+lv_obj_t *ui_screen2;
+lv_obj_t *ui_screen2_arc_arc1;
+lv_obj_t *ui_screen2_button_button3;
+lv_obj_t *ui_screen2_label_label8;
+lv_obj_t *ui_screen2_calendar_calendar1;
+lv_obj_t *ui_screen2_checkbox_checkbox1;
+lv_obj_t *ui_screen2_dropdown_dropdown1;
+lv_obj_t *ui_screen2_keyboard_keyboard1;
+lv_obj_t *ui_screen2_slider_slider1;
+lv_obj_t *ui_screen2_spinbox_spinbox1;
+lv_obj_t *ui_screen2_switch_switch1;
+lv_obj_t *ui_screen2_bar_bar2;
+lv_obj_t *ui_screen2_chart_chart1;
+lv_obj_t *ui_screen2_chart_chart1_Xaxis;
+lv_obj_t *ui_screen2_chart_chart1_Yaxis1;
+lv_obj_t *ui_screen2_chart_chart1_Yaxis2;
+lv_obj_t *ui_screen2_spinner_spinner1;
+lv_obj_t *ui_screen2_tabview_tabview1;
+lv_obj_t *ui_screen2_tabpage_tabpage1;
+lv_obj_t *ui_screen2_tabpage_tabpage2;
+lv_obj_t *ui_screen2_tabpage_tabpage3;
+lv_obj_t *ui_screen2_textarea_textarea1;
 lv_obj_t *ui_startevents____initial_actions0;
 const lv_image_dsc_t *ui_imgset_0e1e5aed207066f1b8acb2c7d2ae52bd8707615c58e4065bc5d8477ce[1] = {&ui_img_30e1e5aed207066f1b8acb2c7d2a3e532b3d8707615c58e40635bc5d84377ce3_png};
 const lv_image_dsc_t *ui_imgset_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da[1] = {&ui_img_399bd3a4f656457bb63e921378eb701908298c8f2b2ad3193c437c206da97681_png};
@@ -94,6 +120,7 @@ lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE
 lv_disp_set_theme(dispp, theme);
 ui_main_screen_init();
 ui_screen1_screen_init();
+ui_screen2_screen_init();
 ui_startevents____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_main);
 }

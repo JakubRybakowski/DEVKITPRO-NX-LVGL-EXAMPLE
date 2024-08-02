@@ -1,5 +1,6 @@
 screens/ui_main.c
 screens/ui_screen1.c
+screens/ui_screen2.c
 ui.c
 components/ui_comp_hook.c
 ui_helpers.c
