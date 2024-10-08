@@ -44,7 +44,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 #---------------------------------------------------------------------------------
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	.build
-SOURCES		:=	src $(shell find lvgl/src -type d) $(shell find ui -type d)
+SOURCES		:=	src $(shell find lvgl/src -type d) $(shell find lvgl/demos -type d) $(shell find ui -type d)
 DATA		:=	data
 INCLUDES	:=	. ./libs/libjpeg-turbo 
 APP_AUTHOR  := FreeShopNS

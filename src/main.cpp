@@ -5,6 +5,7 @@
 #include <SDL2/SDL.h>
 #include <lvgl/lvgl.h>
 #include <ui/ui.h>
+#include <lvgl/demos/lv_demos.h>
 
 
 /*
@@ -84,7 +85,9 @@ static void lvgl_init(void) {
     lv_indev_set_type(indev_keypad, LV_INDEV_TYPE_KEYPAD);
     lv_indev_set_read_cb(indev_keypad, read_keypad_cb);
 
-    ui_init();
+    lv_demo_benchmark();
+    //lv_demo_stress();
+    //ui_init();
 
     SDL_Init(SDL_INIT_JOYSTICK);
     for (int i = 0; i < 2; i++) {

@@ -18,14 +18,6 @@ extern "C" {
 // SCREEN: ui_main
 void ui_main_screen_init(void);
 extern lv_obj_t *ui_main;
-extern lv_obj_t *ui_main_panel_panelpopup;
-extern lv_obj_t *ui_main_label_label12;
-void ui_event_main_button_button6( lv_event_t * e);
-extern lv_obj_t *ui_main_button_button6;
-extern lv_obj_t *ui_main_label_label9;
-void ui_event_main_button_button4( lv_event_t * e);
-extern lv_obj_t *ui_main_button_button4;
-extern lv_obj_t *ui_main_label_label10;
 extern lv_obj_t *ui_main_panel_panel1;
 extern lv_obj_t *ui_main_imgbutton_imgbutton4;
 extern lv_obj_t *ui_main_imgbutton_imgbutton5;
@@ -51,6 +43,14 @@ extern lv_obj_t *ui_main_label_label3;
 extern lv_obj_t *ui_main_imgbutton_imgbutton2;
 extern lv_obj_t *ui_main_label_label2;
 extern lv_obj_t *ui_main_label_label1;
+extern lv_obj_t *ui_main_panel_panelpopup;
+extern lv_obj_t *ui_main_label_label12;
+void ui_event_main_button_button6( lv_event_t * e);
+extern lv_obj_t *ui_main_button_button6;
+extern lv_obj_t *ui_main_label_label9;
+void ui_event_main_button_button4( lv_event_t * e);
+extern lv_obj_t *ui_main_button_button4;
+extern lv_obj_t *ui_main_label_label10;
 // SCREEN: ui_screen2
 void ui_screen2_screen_init(void);
 extern lv_obj_t *ui_screen2;

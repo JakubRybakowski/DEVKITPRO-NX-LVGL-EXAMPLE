@@ -12,14 +12,6 @@
 // SCREEN: ui_main
 void ui_main_screen_init(void);
 lv_obj_t *ui_main;
-lv_obj_t *ui_main_panel_panelpopup;
-lv_obj_t *ui_main_label_label12;
-void ui_event_main_button_button6( lv_event_t * e);
-lv_obj_t *ui_main_button_button6;
-lv_obj_t *ui_main_label_label9;
-void ui_event_main_button_button4( lv_event_t * e);
-lv_obj_t *ui_main_button_button4;
-lv_obj_t *ui_main_label_label10;
 lv_obj_t *ui_main_panel_panel1;
 lv_obj_t *ui_main_imgbutton_imgbutton4;
 lv_obj_t *ui_main_imgbutton_imgbutton5;
@@ -45,6 +37,14 @@ lv_obj_t *ui_main_label_label3;
 lv_obj_t *ui_main_imgbutton_imgbutton2;
 lv_obj_t *ui_main_label_label2;
 lv_obj_t *ui_main_label_label1;
+lv_obj_t *ui_main_panel_panelpopup;
+lv_obj_t *ui_main_label_label12;
+void ui_event_main_button_button6( lv_event_t * e);
+lv_obj_t *ui_main_button_button6;
+lv_obj_t *ui_main_label_label9;
+void ui_event_main_button_button4( lv_event_t * e);
+lv_obj_t *ui_main_button_button4;
+lv_obj_t *ui_main_label_label10;
 
 
 // SCREEN: ui_screen2
