@@ -18,3 +18,5 @@ SquareLine/backup/
 SquareLine/autosave/
 
 DEVKITPRO-NX-LVGL-EXAMPLE.nso
+
+build/

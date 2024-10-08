@@ -31,6 +31,8 @@ static SDL_Thread* tick_thread;
 lv_display_t * disp;
 SDL_Event event;
 
+bool running = true;
+
 void read_pointer_cb(lv_indev_t *indev, lv_indev_data_t *data) {
     (void) indev;
 
@@ -59,7 +61,7 @@ void read_keypad_cb(lv_indev_t *indev, lv_indev_data_t *data) {
 }
 
 static int tick_handler(void *data) {
-    while (appletMainLoop()) {
+    while (appletMainLoop() && running) {
         SDL_Delay(1);
         lv_tick_inc(1);
     }
@@ -108,7 +110,8 @@ void mainLoop() {
                         lv_obj_set_parent(ui_main_panel_panelpopup, ui_main);
                         lv_obj_clear_flag(ui_main_panel_panelpopup, LV_OBJ_FLAG_HIDDEN);
                     } else if (event.jbutton.button == 10) {
-                        appletExit();
+                        running = false;
+                        //appletExit();
                     }
                 }
                 break;
@@ -208,7 +211,7 @@ int main(int argc, char *argv[]) {
         printf("Nie udało się pobrać pamięci: 0x%X\n", rc);
     }
 
-    while (appletMainLoop()) {
+    while (appletMainLoop() && running) {
         mainLoop();
         lv_timer_handler();
     }
